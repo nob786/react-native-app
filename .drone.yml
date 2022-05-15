@@ -25,6 +25,7 @@ steps:
       - ls
       - cd drone
       - ls -l
+      - printenv
       # - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
       # - echo $ANDROID_SDK_ROOT
       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
