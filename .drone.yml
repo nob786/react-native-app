@@ -21,5 +21,6 @@ steps:
     commands:
       - cd android
       - chmod +x gradlew
+      - npm install
       - ./gradlew assembleRelease
 
