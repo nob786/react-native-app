@@ -21,13 +21,13 @@ steps:
     commands:
       - cd ~
       - ls
-      - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-      - echo $ANDROID_SDK_ROOT
-      - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
-      - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
-      - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
-      - npm install
-      - cd android
-      - chmod +x gradlew
-      - ./gradlew assembleRelease
+      # - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+      # - echo $ANDROID_SDK_ROOT
+      # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
+      # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
+      # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
+      # - npm install
+      # - cd android
+      # - chmod +x gradlew
+      # - ./gradlew assembleRelease
 
