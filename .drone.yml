@@ -19,7 +19,7 @@ steps:
   - name: build-apk
     depends_on: [clone]
     commands:
-      - cd ~
+      - cd ~ /.profile
       - ls -l
       - cd ../..
       - ls
