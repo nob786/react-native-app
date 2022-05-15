@@ -19,8 +19,8 @@ steps:
   - name: build-apk
     depends_on: [clone]
     commands:
+      - npm install
       - cd android
       - chmod +x gradlew
-      - npm install
       - ./gradlew assembleRelease
 
