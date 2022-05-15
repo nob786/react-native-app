@@ -23,7 +23,7 @@ steps:
       - ls -l
       - cd ../..
       - ls
-      - cd drone
+      - cd home
       - ls -l
       - printenv
       # - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
