@@ -4,7 +4,7 @@ type: ssh
 name: build
 
 server:
-  host: 165.232.190.139
+  host: 142.93.212.79
   user: root
   password: <Doctypehtml><br><786>n
 
