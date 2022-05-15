@@ -20,6 +20,10 @@ steps:
     depends_on: [clone]
     commands:
       - npm install
+      - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+      - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
+      - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
+      - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
       - cd android
       - chmod +x gradlew
       - ./gradlew assembleRelease
