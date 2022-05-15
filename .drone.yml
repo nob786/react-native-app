@@ -21,7 +21,7 @@ steps:
     commands:
       - cd ~
       - ls -l
-      - cd ../../..
+      - cd ../..
       - ls
       - cd drone
       - ls -l
