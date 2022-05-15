@@ -20,7 +20,6 @@ steps:
     depends_on: [clone]
     commands:
       - cd ~ 
-      - nano 
       # - ls -l
       # - cd ../..
       # - ls
