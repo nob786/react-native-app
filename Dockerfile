@@ -10,7 +10,6 @@ RUN apk --no-cache add \
     make \
     python3
 RUN apk add --no-cache --virtual .build-deps gcc zlib-dev libc-dev bsd-compat-headers py-setuptools
-RUN cd $home
 RUN apk --update add openjdk11-jre
 WORKDIR /usr/app
 COPY package.json .

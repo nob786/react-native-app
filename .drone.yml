@@ -1,0 +1,25 @@
+---
+kind: pipeline
+type: ssh
+name: build
+
+server:
+  host: 167.71.236.178
+  user: root
+  password: <Doctypehtml><br><786>n
+
+trigger:
+  branch:
+    - master
+  event:
+    - push
+    - pull_request
+
+steps:
+  - name: build-apk
+    depends_on: [clone]
+    commands:
+      - cd android
+      - chmod +x gradlew
+      - ./gradlew assembleRelease
+
