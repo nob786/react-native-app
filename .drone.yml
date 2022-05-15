@@ -19,13 +19,14 @@ steps:
   - name: build-apk
     depends_on: [clone]
     commands:
-      - cd ~ /.profile
-      - ls -l
-      - cd ../..
-      - ls
-      - cd home
-      - ls -l
-      - printenv
+      - cd ~ 
+      - nano ~ /.profile
+      # - ls -l
+      # - cd ../..
+      # - ls
+      # - cd home
+      # - ls -l
+      # - printenv
       # - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
       # - echo $ANDROID_SDK_ROOT
       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
