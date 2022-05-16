@@ -37,6 +37,7 @@ steps:
       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
       - pwd
+      - ls
       # - npm install
       # - cd root//android
       # - chmod +x gradlew
