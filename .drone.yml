@@ -41,6 +41,9 @@ steps:
       - cd ../..
       - pwd
       - ls
+      - cd home
+      - ls
+    
       # - npm install
       # - cd root//android
       # - chmod +x gradlew
