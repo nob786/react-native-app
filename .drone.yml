@@ -21,7 +21,8 @@ steps:
     commands:
       - cd ~
       - sudo apt-get -y install nano
-      - nano ~ /.profile
+      # - nano ~ /.profile
+      source ~ /.profile
       # - cd ~ 
       # - ls -l
       # - cd ../..
