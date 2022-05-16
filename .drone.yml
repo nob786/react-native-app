@@ -43,6 +43,9 @@ steps:
       - ls
       - cd home
       - ls
+      - cd drone
+      - ls
+      
     
       # - npm install
       # - cd root//android
