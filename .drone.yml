@@ -19,10 +19,10 @@ steps:
   - name: build-apk
     depends_on: [clone]
     commands:
-      - cd ~
-      - sudo apt-get -y install nano
+      # - cd ~
+      # - sudo apt-get -y install nano
       # - nano ~ /.profile
-      - source ~ /.profile
+      # - source ~ /.profile
       # - cd ~ 
       # - ls -l
       # - cd ../..
@@ -36,8 +36,9 @@ steps:
       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
+      - pwd
       # - npm install
-      # - cd android
+      # - cd root//android
       # - chmod +x gradlew
       # - ./gradlew assembleRelease
 
