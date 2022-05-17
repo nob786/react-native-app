@@ -6,7 +6,7 @@ name: build
 server:
   host: 142.93.212.79
   user: root
-  password: <Doctypehtml><br><786>n
+  password: 366052b0545683fa19c23bb017
 
 trigger:
   branch:
