@@ -28,7 +28,7 @@ steps:
       - npm install
       - cd android
       - chmod +x gradlew
-      - ./gradlew assembleRelease
+      - ./gradlew bundleRelease
       # - cd ~
       # - sudo apt-get -y install nano
       # - nano ~ /.profile
