@@ -23,6 +23,10 @@ steps:
       - export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
       - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
       - echo $ANDROID_SDK_ROOT
+      - npm install
+      - cd root//android
+      - chmod +x gradlew
+      - ./gradlew assembleRelease
       # - cd ~
       # - sudo apt-get -y install nano
       # - nano ~ /.profile
@@ -40,8 +44,5 @@ steps:
       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
-      # - npm install
-      # - cd root//android
-      # - chmod +x gradlew
-      # - ./gradlew assembleRelease
+      
 
