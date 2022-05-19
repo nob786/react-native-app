@@ -19,9 +19,9 @@ steps:
   - name: build-apk
     depends_on: [clone]
     commands:
-      # - export ANDROID_SDK_ROOT=/tmp/android/sdk
-      # - export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-      # - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+      - export ANDROID_SDK_ROOT=/tmp/android/sdk
+      - export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+      - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
       - echo $ANDROID_SDK_ROOT
       - pwd
       - npm install
