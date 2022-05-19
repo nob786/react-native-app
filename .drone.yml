@@ -24,7 +24,7 @@ steps:
       - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
       - echo $ANDROID_SDK_ROOT
       - npm install
-      - cd root//android
+      - cd android
       - chmod +x gradlew
       - ./gradlew assembleRelease
       # - cd ~
