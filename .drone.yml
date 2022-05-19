@@ -27,6 +27,7 @@ steps:
       - echo "Hi"
       - ls
       - npm install
+      - ls
       - cd android
       - chmod +x gradlew
       - ./gradlew bundleRelease
