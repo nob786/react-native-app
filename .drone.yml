@@ -4,9 +4,9 @@ type: ssh
 name: build
 
 server:
-  host: 142.93.212.79
+  host: 157.245.96.143
   user: root
-  password: 366052b0545683fa19c23bb017
+  password: pakistan1234
 
 trigger:
   branch:
@@ -19,6 +19,10 @@ steps:
   - name: build-apk
     depends_on: [clone]
     commands:
+      export ANDROID_SDK_ROOT=/tmp/android/sdk
+      export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+      export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+      echo $ANDROID_SDK_ROOT
       # - cd ~
       # - sudo apt-get -y install nano
       # - nano ~ /.profile
@@ -36,17 +40,6 @@ steps:
       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
-      - pwd
-      - ls
-      - cd ../..
-      - pwd
-      - ls
-      - cd home
-      - ls
-      - cd drone
-      - ls
-      
-    
       # - npm install
       # - cd root//android
       # - chmod +x gradlew
