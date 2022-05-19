@@ -25,6 +25,7 @@ steps:
       - echo $ANDROID_SDK_ROOT
       - pwd
       - echo "Hi"
+      - ls
       - npm install
       - cd android
       - chmod +x gradlew
