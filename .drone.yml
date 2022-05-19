@@ -24,6 +24,7 @@ steps:
       - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
       - echo $ANDROID_SDK_ROOT
       - pwd
+      - echo "Hi"
       - npm install
       - cd android
       - chmod +x gradlew
