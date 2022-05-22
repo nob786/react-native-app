@@ -4,9 +4,9 @@ type: ssh
 name: build
 
 server:
-  host: 157.245.96.143
+  host: 139.59.90.136
   user: root
-  password: pakistan1234
+  password: pakistAn1n
 
 trigger:
   branch:
