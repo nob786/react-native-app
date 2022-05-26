@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: ssh
-name: build
+name: android-build
 
 server:
   host: 139.59.90.136
@@ -47,5 +47,26 @@ steps:
       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
-      
+---
+kind: pipeline
+type: ssh
+name: ios-build
+
+server:
+  host:
+  user:
+  password:
+
+trigger:
+  branch:
+    - master
+  event:
+    - push
+    - pull_request
+
+steps:
+  - name: build-ipa
+    depends_on: [clone]
+    commands:
+    
 
