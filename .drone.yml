@@ -23,7 +23,7 @@ steps:
       - export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
       - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
       - echo $ANDROID_SDK_ROOT
-      # - pwd
+      - pwd
       # - ls
       # - npm install
       # - ls
