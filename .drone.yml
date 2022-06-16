@@ -52,6 +52,9 @@ kind: pipeline
 type: ssh
 name: ios-build
 
+depends_on:
+  - android-build
+
 server:
   host: 74-80-245-212.ic2net.net
   user: user222348
