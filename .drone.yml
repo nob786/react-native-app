@@ -47,4 +47,3 @@ steps:
       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
----
