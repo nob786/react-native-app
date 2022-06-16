@@ -1,52 +1,52 @@
-# ---
-# kind: pipeline
-# type: ssh
-# name: android-build
+---
+kind: pipeline
+type: ssh
+name: android-build
 
-# server:
-#   host: 139.59.90.136
-#   user: root
-#   password: pakistAn1n
+server:
+  host: 139.59.90.136
+  user: root
+  password: pakistAn1n
 
-# trigger:
-#   branch:
-#     - master
-#   event:
-#     - push
-#     - pull_request
+trigger:
+  branch:
+    - master
+  event:
+    - pushx
+    - pull_requestx
 
-# steps:
-#   - name: build-apk
-#     depends_on: [clone]
-#     commands:
-#       - export ANDROID_SDK_ROOT=/root/android/sdk
-#       - export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-#       - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-#       - echo $ANDROID_SDK_ROOT
-#       - pwd
-#       - ls
-#       - npm install
-#       - ls
-#       - cd android
-#       - chmod +x gradlew
-#       - ./gradlew assembleRelease
-#       # - cd ~
-#       # - sudo apt-get -y install nano
-#       # - nano ~ /.profile
-#       # - source ~ /.profile
-#       # - cd ~ 
-#       # - ls -l
-#       # - cd ../..
-#       # - ls
-#       # - cd home
-#       # - ls -l
-#       # - printenv
-#       # - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-#       # - echo $ANDROID_SDK_ROOT
-#       # - ls -l
-#       # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
-#       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
-#       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
+steps:
+  - name: build-apk
+    depends_on: [clone]
+    commands:
+      - export ANDROID_SDK_ROOT=/root/android/sdk
+      - export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+      - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+      - echo $ANDROID_SDK_ROOT
+      - pwd
+      - ls
+      - npm install
+      - ls
+      - cd android
+      - chmod +x gradlew
+      - ./gradlew assembleRelease
+      # - cd ~
+      # - sudo apt-get -y install nano
+      # - nano ~ /.profile
+      # - source ~ /.profile
+      # - cd ~ 
+      # - ls -l
+      # - cd ../..
+      # - ls
+      # - cd home
+      # - ls -l
+      # - printenv
+      # - export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+      # - echo $ANDROID_SDK_ROOT
+      # - ls -l
+      # - export PATH=$ANDROID_SDK_ROOT/cmdline-tools/tools/bin/:$PATH
+      # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
+      # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
 ---
 kind: pipeline
 type: ssh
