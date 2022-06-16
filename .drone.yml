@@ -4,9 +4,9 @@ type: ssh
 name: android-build
 
 server:
-  host: 137.184.74.55
-  user: root
-  password: pakistAn1n
+  host: 74-80-245-212.ic2net.net
+  user: user222348
+  password: vxf79478vpj
 
 trigger:
   branch:
