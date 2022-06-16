@@ -48,28 +48,3 @@ steps:
       # - export PATH=$ANDROID_SDK_ROOT/emulator/:$PATH
       # - export PATH=$ANDROID_SDK_ROOT/platform-tools/:$PATH
 ---
-kind: pipeline
-type: ssh
-name: ios-build
-
-depends_on:
-  - android-build
-
-server:
-  host: 74-80-245-212.ic2net.net
-  user: user222348
-  password: vxf79478vpj
-
-trigger:
-  branch:
-    - master
-  event:
-    - push
-    - pull_request
-
-steps:
-  - name: build-ipa
-    depends_on: [clone]
-    commands:
-      - pwd
----
