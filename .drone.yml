@@ -12,8 +12,8 @@ trigger:
   branch:
     - master
   event:
-    - pushx
-    - pull_requestx
+    - push
+    - pull_request
 
 steps:
   - name: build-apk
@@ -23,13 +23,13 @@ steps:
       - export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
       - export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
       - echo $ANDROID_SDK_ROOT
-      - pwd
-      - ls
-      - npm install
-      - ls
-      - cd android
-      - chmod +x gradlew
-      - ./gradlew assembleRelease
+      # - pwd
+      # - ls
+      # - npm install
+      # - ls
+      # - cd android
+      # - chmod +x gradlew
+      # - ./gradlew assembleRelease
       # - cd ~
       # - sudo apt-get -y install nano
       # - nano ~ /.profile
@@ -61,8 +61,8 @@ trigger:
   branch:
     - master
   event:
-    - push
-    - pull_request
+    - pushx
+    - pull_requestx
 
 steps:
   - name: build-ipa
