@@ -53,16 +53,16 @@ type: ssh
 name: ios-build
 
 server:
-  host: 74-80-245-212.ic2net.net
-  user: user222348
-  password: vxf79478vpj
+  host: 137.184.74.55
+  user: root
+  password: pakistAn1n
 
 trigger:
   branch:
     - master
   event:
-    - pushx
-    - pull_requestx
+    - push
+    - pull_request
 
 steps:
   - name: build-ipa
